@@ -12,6 +12,9 @@ public class Rectangle implements Shape{
     @Override
     public double area()
     {
-        return length*height;
+        if(this.length>0 && this.height>0)
+            return length*height;
+        else
+            return 0;
     }
 }
